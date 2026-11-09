@@ -19,10 +19,15 @@ export const tracked = {
   viewport: '@ohif/extension-measurement-tracking.viewportModule.cornerstone-tracked',
 };
 
+export const aiViewer = {
+  aiPanel: '@ohif/extension-ai-viewer.panelModule.aiPanel',
+};
+
 export const extensionDependencies = {
   // Can derive the versions at least process.env.from npm_package_version
   ...basicDependencies,
   '@ohif/extension-measurement-tracking': '^3.0.0',
+  '@ohif/extension-ai-viewer': '^3.0.0',
 };
 
 export const longitudinalInstance = {
@@ -34,7 +39,7 @@ export const longitudinalInstance = {
     // `leftPanels` / `rightPanels` customizations so `mode` phase
     // blocks and global customizations can modify them.
     leftPanels: [tracked.thumbnailList],
-    rightPanels: [cornerstone.segmentation, tracked.measurements],
+    rightPanels: [cornerstone.segmentation, tracked.measurements, aiViewer.aiPanel],
     viewports: [
       {
         namespace: tracked.viewport,

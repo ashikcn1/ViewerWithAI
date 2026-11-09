@@ -34,6 +34,7 @@
     "@ohif/extension-cornerstone-dicom-rt": "workspace:*",
     "@ohif/extension-cornerstone-dicom-seg": "workspace:*",
     "@ohif/extension-cornerstone-dicom-sr": "workspace:*",
+    "@ohif/extension-ai-viewer": "workspace:*",
     "@ohif/extension-default": "workspace:*",
     "@ohif/extension-dicom-pdf": "workspace:*",
     "@ohif/extension-dicom-video": "workspace:*",
